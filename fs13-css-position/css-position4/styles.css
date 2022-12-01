@@ -1,0 +1,66 @@
+body {
+  background: white;
+}
+.grid{
+  display: grid;
+  grid-template-areas:
+    'i1 i3 i3 i4 i5'
+    'i2 i3 i3 i4 i5';
+}
+.grid .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+
+}
+.grid .item .box {
+  padding: 3em;
+  position: relative;
+}
+.grid .item .box .diamond{
+  background-color: #eaded2;
+  width: max-content;
+  transform: rotate(45deg);
+  padding: 0px 5px;
+}
+.grid .item .box p{
+  margin: 0;
+  transform: rotate(-45deg);
+}
+
+.item:nth-child(1){
+  background-color: #cb77ea;
+  grid-area: i1;
+  margin-bottom: 10px;
+}
+.item:nth-child(2){
+  background-color: #db7252;
+  grid-area: i2;
+}
+.item:nth-child(3){
+  background-color: #6dc949;
+  grid-area: i3;
+}
+.item:nth-child(4){
+  background-color: #3787a0;
+  grid-area: i4;
+}
+.item:nth-child(5){
+  background-color: #96327e;
+  grid-area: i5;
+}
+.grid .item .box .tooltip{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+}
+.grid .item .box:hover .tooltip {
+ visibility: visible;
+}
+
+

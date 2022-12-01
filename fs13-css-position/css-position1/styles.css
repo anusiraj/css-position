@@ -1,0 +1,14 @@
+body {
+  background: white;
+  display:flex;
+
+
+}
+
+.container {
+  background-color: bisque;
+  height: 20em; 
+  /* vh vw em rem  */
+  display:flex;
+  align-items: center;
+}
